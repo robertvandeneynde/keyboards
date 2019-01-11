@@ -30,7 +30,8 @@ xkb_symbols "basic" {
     key <AC01>	{ [         q,          Q,           ae,           AE ]	};
     key <AC10>	{ [         m,          M,   dead_acute, dead_doubleacute ] };
     key <AC11>	{ [    ugrave,    percent,   dead_acute,   dead_caron ]	};
-    key <TLDE>	{ [twosuperior, threesuperior,  grave,      asciitilde]	}; // was notsign
+    // key <TLDE> { [twosuperior, threesuperior,  grave,      asciitilde]	}; // was notsign
+    key <TLDE>	{ [     grave, asciitilde,  twosuperior, threesuperior ]	}; 
 
     key <BKSL>	{ [        backslash,   bar,   dead_grave,   dead_breve ]	};  /// was micro, sterling
     key <AB01>	{ [         w,          W, guillemotleft,        less ]	};
