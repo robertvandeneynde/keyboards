@@ -522,7 +522,8 @@ xkb_symbols "phonetic_azerty" {
      key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
      key <AB10>	{ [    exclam,    section, dead_belowdot, dead_abovedot ] };
 
-     key <AC11>  { [    ugrave,    percent,  asciicircum,        caron ] };
+     // key <AC11>  { [    ugrave,    percent,  asciicircum,        caron ] };
+     key <AC11>  { [    U0447, U0427, percent,  asciicircum,        caron ] };
      key	<LSGT> {	[	      bar,	 brokenbar	]	};
 
      key	<TLDE> {	[     Cyrillic_yu,     Cyrillic_YU	]	};
