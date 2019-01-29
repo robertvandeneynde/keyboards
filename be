@@ -30,16 +30,17 @@ xkb_symbols "basic" {
     key <AC01>	{ [         q,          Q,           ae,           AE ]	};
     key <AC10>	{ [         m,          M,   dead_acute, dead_doubleacute ] };
     key <AC11>	{ [    ugrave,    percent,   dead_acute,   dead_caron ]	};
-    // key <TLDE> { [twosuperior, threesuperior,  grave,      asciitilde]	}; // was notsign
-    key <TLDE>	{ [     grave, asciitilde,  twosuperior, threesuperior ]	}; 
+    // key <TLDE> { [twosuperior, threesuperior,        grave, asciitilde]	}; // was notsign
+    key <TLDE>    { [      grave,    asciitilde,  twosuperior, threesuperior]	}; 
 
     key <BKSL>	{ [        backslash,   bar,   dead_grave,   dead_breve ]	};  /// was micro, sterling
     key <AB01>	{ [         w,          W, guillemotleft,        less ]	};
     key <AB07>	{ [     comma,   question, dead_cedilla,    masculine ]	};
     key <AB08>	{ [ semicolon,     period, horizconnector,   multiply ]	};
     key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
-    key <AB10>	{ [     equal,       plus,    dead_tilde, dead_abovedot]	}; // asciitilde is not fun
-    key <LSGT>  { [      less,    greater,    backslash,    backslash ]	};
+    // key <AB10> { [     equal,       plus,    dead_tilde, dead_abovedot]	}; // asciitilde is not fun
+    key <AB10>    { [     equal,       plus,    asciitilde, dead_abovedot]	}; // but let's try again
+    key <LSGT>    { [      less,    greater,    backslash,    backslash ]	};
 
     include "level3(ralt_switch)"
 };
