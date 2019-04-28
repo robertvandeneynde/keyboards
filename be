@@ -12,9 +12,11 @@ xkb_symbols "basic" {
     key <AE03>	{ [  quotedbl,          3,   numbersign,     sterling ]	};
     key <AE04>	{ [apostrophe,          4,   onequarter,       dollar ]	};
     key <AE05>	{ [ parenleft,          5,      onehalf, threeeighths ]	};
-    key <AE06>	{ [   section,          6,  asciicircum,  fiveeighths ]	};
-    key <AE07>	{ [    egrave,          7,    braceleft, seveneighths ]	};
-    key <AE08>	{ [    exclam,          8,  bracketleft,    trademark ]	};
+    key <AE06>	{ [ underscore,          6,  asciicircum,  fiveeighths ]	};  // was section
+    // key <AE07>	{ [    egrave,          7,    braceleft, seveneighths ]	};
+    key <AE07>	{ [    egrave,          7,    U0303, seveneighths ]	};
+    // key <AE08>	{ [    exclam,          8,  bracketleft,    trademark ]	};
+    key <AE08>	{ [    exclam,          8,  U0303,    trademark ]	};
     key <AE09>	{ [  ccedilla,          9,    braceleft,    plusminus ]	};
     key <AE10>	{ [    agrave,          0,   braceright,       degree ]	};
     key <AE11>	{ [parenright,     degree,    backslash, questiondown ]	};
@@ -29,7 +31,7 @@ xkb_symbols "basic" {
 
     key <AC01>	{ [         q,          Q,           ae,           AE ]	};
     key <AC10>	{ [         m,          M,   dead_acute, dead_doubleacute ] };
-    key <AC11>	{ [    ugrave,    percent,   dead_acute,   dead_caron ]	};
+    key <AC11>	{ [    ugrave,    percent,   dead_acute,   dead_caron ]	}; // was "period" then "ugrave"
     // key <TLDE> { [twosuperior, threesuperior,        grave, asciitilde]	}; // was notsign
     key <TLDE>    { [      grave,    asciitilde,  twosuperior, threesuperior]	}; 
 
@@ -40,7 +42,9 @@ xkb_symbols "basic" {
     key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
     // key <AB10> { [     equal,       plus,    dead_tilde, dead_abovedot]	}; // asciitilde is not fun
     key <AB10>    { [     equal,       plus,    asciitilde, dead_abovedot]	}; // but let's try again
-    key <LSGT>    { [      less,    greater,    backslash,    backslash ]	};
+    // key <LSGT>    { [      less,    greater,    backslash,    backslash ]	};
+    // key <LSGT>    { [      less,    greater,    U0303, backslash ]	};
+    key <LSGT>    { [      less,    greater,    question, backslash]	};
 
     include "level3(ralt_switch)"
 };

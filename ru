@@ -505,7 +505,7 @@ xkb_symbols "phonetic_azerty" {
     name[Group1]= "Russian (phonetic azerty)";
 
      key <AE01>	{ [ ampersand,          1,  onesuperior,   exclamdown ]	};
-     key <AE02>	{ [    eacute,          2,   asciitilde,    oneeighth ]	};
+     key <AE02>	{ [    Cyrillic_io,          2,   asciitilde,    oneeighth ]	};
      key <AE03>	{ [  quotedbl,          3,   numbersign,     sterling ]	};
      key <AE04>	{ [apostrophe,          4,    braceleft,       dollar ]	};
      key <AE05>	{ [ parenleft,          5,  bracketleft, threeeighths ]	};
@@ -535,7 +535,7 @@ xkb_symbols "phonetic_azerty" {
      key	<LatC> {	[    Cyrillic_tse,    Cyrillic_TSE	]	};
      key	<LatX> {	[Cyrillic_softsign,Cyrillic_SOFTSIGN	]	};
      key	<LatD> {	[     Cyrillic_de,     Cyrillic_DE	]	};
-     key	<LatE> {	[     Cyrillic_ie,     Cyrillic_IE	]	};
+     key	<LatE> {	[     Cyrillic_ie,     Cyrillic_IE, Cyrillic_io, Cyrillic_IO	]	};
      key	<LatV> {	[    Cyrillic_zhe,    Cyrillic_ZHE	]	};
      key	<LatF> {	[     Cyrillic_ef,     Cyrillic_EF	]	};
      key	<LatT> {	[     Cyrillic_te,     Cyrillic_TE	]	};
