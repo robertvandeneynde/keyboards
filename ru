@@ -531,12 +531,14 @@ xkb_symbols "phonetic_azerty" {
      key	<AD02> {	[     Cyrillic_ze,     Cyrillic_ZE	]	}; // Z
      key	<LatS> {	[     Cyrillic_es,     Cyrillic_ES	]	};
      key	<AD01> {	[      Cyrillic_a,	Cyrillic_A	]	};
-     key	<AB01> {	[     Cyrillic_ve,     Cyrillic_VE	]	}; // W
+     //key	<AB01> {	[     Cyrillic_ve,     Cyrillic_VE	]	};
+     key	<AB01> {	[    Cyrillic_zhe,    Cyrillic_ZHE	]	};
      key	<LatC> {	[    Cyrillic_tse,    Cyrillic_TSE	]	};
      key	<LatX> {	[Cyrillic_softsign,Cyrillic_SOFTSIGN	]	};
      key	<LatD> {	[     Cyrillic_de,     Cyrillic_DE	]	};
      key	<LatE> {	[     Cyrillic_ie,     Cyrillic_IE, Cyrillic_io, Cyrillic_IO	]	};
-     key	<LatV> {	[    Cyrillic_zhe,    Cyrillic_ZHE	]	};
+     //key	<LatV> {	[    Cyrillic_zhe,    Cyrillic_ZHE	]	};
+     key	<LatV> {	[     Cyrillic_ve,     Cyrillic_VE	]	};
      key	<LatF> {	[     Cyrillic_ef,     Cyrillic_EF	]	};
      key	<LatT> {	[     Cyrillic_te,     Cyrillic_TE	]	};
      key	<LatR> {	[     Cyrillic_er,     Cyrillic_ER	]	};
