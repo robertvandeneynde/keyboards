@@ -505,13 +505,13 @@ xkb_symbols "phonetic_azerty" {
     name[Group1]= "Russian (phonetic azerty)";
 
      key <AE01>	{ [ ampersand,          1,  onesuperior,   exclamdown ]	};
-     key <AE02>	{ [    Cyrillic_io,          2,   asciitilde,    oneeighth ]	};
+     key <AE02>	{ [ Cyrillic_io, Cyrillic_IO,asciitilde,    oneeighth ]	};
      key <AE03>	{ [  quotedbl,          3,   numbersign,     sterling ]	};
      key <AE04>	{ [apostrophe,          4,    braceleft,       dollar ]	};
      key <AE05>	{ [ parenleft,          5,  bracketleft, threeeighths ]	};
      key <AE06>	{ [     minus,          6,          bar,  fiveeighths ]	};
-     key <AE07>	{ [    egrave,          7,        grave, seveneighths ]	};
-     key <AE08>	{ [underscore,          8,    backslash,    trademark ]	};
+     key <AE07>	{ [ Cyrillic_yu, Cyrillic_YU,     grave, seveneighths ]	};
+     key <AE08>	{ [    exclam,          8,    backslash,    trademark ]	};
      key <AE09>	{ [  ccedilla,          9,  asciicircum,    plusminus ]	};
      key <AE10>	{ [    agrave,          0,           at,       degree ]	};
      key <AE11>	{ [parenright,     degree, bracketright, questiondown ]	};
@@ -520,10 +520,10 @@ xkb_symbols "phonetic_azerty" {
      key <AB07>  { [     comma,   question,        acute,  doubleacute ] };
      key <AB08>	{ [ semicolon,     period, horizconnector,   multiply ]	};
      key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
-     key <AB10>	{ [    exclam,    section, dead_belowdot, dead_abovedot ] };
+     key <AB10>	{ [    Cyrillic_yu,    Cyrillic_YU, equals, plus ] };
 
      // key <AC11>  { [    ugrave,    percent,  asciicircum,        caron ] };
-     key <AC11>  { [    U0447, U0427, percent,  asciicircum,        caron ] };
+     key <AC11>  { [    Cyrillic_che, Cyrillic_CHE, percent,  asciicircum,        caron ] };
      key	<LSGT> {	[	      bar,	 brokenbar	]	};
 
      key	<TLDE> {	[     Cyrillic_yu,     Cyrillic_YU	]	};
@@ -534,7 +534,7 @@ xkb_symbols "phonetic_azerty" {
      //key	<AB01> {	[     Cyrillic_ve,     Cyrillic_VE	]	};
      key	<AB01> {	[    Cyrillic_zhe,    Cyrillic_ZHE	]	};
      key	<LatC> {	[    Cyrillic_tse,    Cyrillic_TSE	]	};
-     key	<LatX> {	[Cyrillic_softsign,Cyrillic_SOFTSIGN	]	};
+     key	<LatX> {	[Cyrillic_softsign,Cyrillic_SOFTSIGN, Cyrillic_hardsign, Cyrillic_HARDSIGN	]	};
      key	<LatD> {	[     Cyrillic_de,     Cyrillic_DE	]	};
      key	<LatE> {	[     Cyrillic_ie,     Cyrillic_IE, Cyrillic_io, Cyrillic_IO	]	};
      //key	<LatV> {	[    Cyrillic_zhe,    Cyrillic_ZHE	]	};
@@ -557,7 +557,8 @@ xkb_symbols "phonetic_azerty" {
      key	<LatP> {	[     Cyrillic_pe,     Cyrillic_PE	]	};
 
     key	<AD11> {	[    Cyrillic_sha,    Cyrillic_SHA	]	};
-    key	<AE12> {	[    Cyrillic_che,    Cyrillic_CHE	]	};
+    //key <AE12> {	[    Cyrillic_che,    Cyrillic_CHE	]	};
+    key <AE12> {	[           minus,      underscore	]	};
     key	<AD12> {	[  Cyrillic_shcha,  Cyrillic_SHCHA	]	};
     key	<BKSL> {	[      Cyrillic_e,	Cyrillic_E	]	};
 };
@@ -631,6 +632,15 @@ xkb_symbols "phonetic_fr" {
     include "ru(phonetic_azerty)"
 
     name[Group1]= "Russian (phonetic French)";
+};
+
+partial alphanumeric_keys
+xkb_symbols "phonetic_be" {
+
+    include "be"
+    include "ru(phonetic_azerty)"
+
+    name[Group1]= "Russian (phonetic Belgian)";
 };
 
 // EXTRAS:
