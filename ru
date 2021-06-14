@@ -517,14 +517,16 @@ xkb_symbols "phonetic_azerty" {
      key <AE11>	{ [parenright,     degree, bracketright, questiondown ]	};
      key <AE12>	{ [     equal,       plus,   braceright,  dead_ogonek ]	};
 
-     key <AB07>  { [     comma,   question,        acute,  doubleacute ] };
-     key <AB08>	{ [ semicolon,     period, horizconnector,   multiply ]	};
-     key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
-     key <AB10>	{ [    Cyrillic_yu,    Cyrillic_YU, equals, plus ] };
+     key <AB07>   { [     comma,   question,          acute,   doubleacute ] };
+     key <AB08>   { [ semicolon,     period, horizconnector,      multiply ] };
+     key <AB09>   { [     colon,      slash, periodcentered,      division ] };
+     //key <AB10> { [  Cyrillic_yu, Cyrillic_YU,        equal,        plus ] };
+     key <AB10>   { [        equal,         plus, Cyrillic_yu, Cyrillic_YU ] };
 
      // key <AC11>  { [    ugrave,    percent,  asciicircum,        caron ] };
      key <AC11>  { [    Cyrillic_che, Cyrillic_CHE, percent,  asciicircum,        caron ] };
-     key	<LSGT> {	[	      bar,	 brokenbar	]	};
+     // key	<LSGT> {	[	      bar,	 brokenbar	]	};
+     // key	<LSGT> {	[	      less,	 greeter	]	};
 
      key	<TLDE> {	[     Cyrillic_yu,     Cyrillic_YU	]	};
      key	<AC01> {	[     Cyrillic_ya,     Cyrillic_YA	]	}; // Q
