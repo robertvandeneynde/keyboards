@@ -521,7 +521,7 @@ xkb_symbols "phonetic_azerty" {
      key <AE05>	{ [ parenleft,          5,  bracketleft, threeeighths ]	};
      key <AE06>	{ [     minus,          6,          bar,  fiveeighths ]	};
      key <AE07>	{ [    egrave,          7,        grave, seveneighths ]	};
-     key <AE08>	{ [underscore,          8,    backslash,    trademark ]	};
+     key <AE08>	{ [exclam,          8,    backslash,    trademark ]	};
      key <AE09>	{ [  ccedilla,          9,  asciicircum,    plusminus ]	};
      key <AE10>	{ [    agrave,          0,           at,       degree ]	};
      key <AE11>	{ [parenright,     degree, bracketright, questiondown ]	};
@@ -530,9 +530,9 @@ xkb_symbols "phonetic_azerty" {
      key <AB07> { [     comma,   question,        acute,  doubleacute ] };
      key <AB08>	{ [ semicolon,     period, horizconnector,   multiply ]	};
      key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
-     key <AB10>	{ [    exclam,    section, dead_belowdot, dead_abovedot ] };
+     key <AB10>	{ [    equal,    section, dead_belowdot, dead_abovedot ] };
 
-     key <AC11>  { [    ugrave,    percent,  asciicircum,        caron ] };
+     key <AC11>  { [    Cyrillic_che,    Cyrillic_CHE,  asciicircum,        caron ] };
      key	<LSGT> {	[	      bar,	 brokenbar	]	};
 
      key	<TLDE> {	[     Cyrillic_yu,     Cyrillic_YU	]	};
@@ -540,12 +540,12 @@ xkb_symbols "phonetic_azerty" {
      key	<AD02> {	[     Cyrillic_ze,     Cyrillic_ZE	]	}; // Z
      key	<LatS> {	[     Cyrillic_es,     Cyrillic_ES	]	};
      key	<AD01> {	[      Cyrillic_a,	Cyrillic_A	]	};
-     key	<AB01> {	[     Cyrillic_ve,     Cyrillic_VE	]	}; // W
+     key	<AB01> {	[     Cyrillic_zhe,     Cyrillic_ZHE	]	}; // W
      key	<LatC> {	[    Cyrillic_tse,    Cyrillic_TSE	]	};
-     key	<LatX> {	[Cyrillic_softsign,Cyrillic_SOFTSIGN	]	};
+     key	<LatX> {	[Cyrillic_softsign,Cyrillic_SOFTSIGN, Cyrillic_hardsign, Cyrillic_HARDSIGN	]	};
      key	<LatD> {	[     Cyrillic_de,     Cyrillic_DE	]	};
-     key	<LatE> {	[     Cyrillic_ie,     Cyrillic_IE	]	};
-     key	<LatV> {	[    Cyrillic_zhe,    Cyrillic_ZHE	]	};
+     key	<LatE> {	[     Cyrillic_ie,     Cyrillic_IE, Cyrillic_io, Cyrillic_IO	]	};
+     key	<LatV> {	[    Cyrillic_ve,    Cyrillic_VE	]	};
      key	<LatF> {	[     Cyrillic_ef,     Cyrillic_EF	]	};
      key	<LatT> {	[     Cyrillic_te,     Cyrillic_TE	]	};
      key	<LatR> {	[     Cyrillic_er,     Cyrillic_ER	]	};
@@ -564,7 +564,7 @@ xkb_symbols "phonetic_azerty" {
      key	<LatP> {	[     Cyrillic_pe,     Cyrillic_PE	]	};
 
     key	<AD11> {	[    Cyrillic_sha,    Cyrillic_SHA	]	};
-    key	<AE12> {	[    Cyrillic_che,    Cyrillic_CHE	]	};
+    key	<AE12> {	[    minus,    underscore	]	};
     key	<AD12> {	[  Cyrillic_shcha,  Cyrillic_SHCHA	]	};
     key	<BKSL> {	[      Cyrillic_e,	Cyrillic_E	]	};
 };
