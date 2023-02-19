@@ -1,6 +1,4 @@
-// based on a keyboard map from an 'xkb/symbols/be' file
-
-default  partial alphanumeric_keys
+default partial alphanumeric_keys
 xkb_symbols "basic" {
 
     include "latin"
@@ -12,11 +10,9 @@ xkb_symbols "basic" {
     key <AE03>	{ [  quotedbl,          3,   numbersign,     sterling ]	};
     key <AE04>	{ [apostrophe,          4,   onequarter,       dollar ]	};
     key <AE05>	{ [ parenleft,          5,      onehalf, threeeighths ]	};
-    key <AE06>	{ [ underscore,          6,  asciicircum,  fiveeighths ]	};  // was section
-    // key <AE07>	{ [    egrave,          7,    braceleft, seveneighths ]	};
-    key <AE07>	{ [    egrave,          7,    U0303, seveneighths ]	};
-    // key <AE08>	{ [    exclam,          8,  bracketleft,    trademark ]	};
-    key <AE08>	{ [    exclam,          8,  U0303,    trademark ]	};
+    key <AE06>	{ [   section,          6,  asciicircum,  fiveeighths ]	};
+    key <AE07>	{ [    egrave,          7,    braceleft, seveneighths ]	};
+    key <AE08>	{ [    exclam,          8,  bracketleft,    trademark ]	};
     key <AE09>	{ [  ccedilla,          9,    braceleft,    plusminus ]	};
     key <AE10>	{ [    agrave,          0,   braceright,       degree ]	};
     key <AE11>	{ [parenright,     degree,    backslash, questiondown ]	};
@@ -31,23 +27,16 @@ xkb_symbols "basic" {
 
     key <AC01>	{ [         q,          Q,           ae,           AE ]	};
     key <AC10>	{ [         m,          M,   dead_acute, dead_doubleacute ] };
-    key <AC11>	{ [    ugrave,    percent,   dead_acute,   dead_caron ]	}; // was "period" then "ugrave"
-    // key <TLDE> { [twosuperior, threesuperior,        grave, asciitilde]	}; // was notsign
-    key <TLDE>    { [      grave,    asciitilde,  twosuperior, threesuperior]	}; 
+    key <AC11>	{ [    ugrave,    percent,   dead_acute,   dead_caron ]	};
+    key <TLDE>	{ [twosuperior, threesuperior,  notsign,      notsign ]	};
 
-    key <BKSL>	{ [        backslash,   bar,   dead_grave,   dead_breve ]	};  /// was micro, sterling
+    key <BKSL>	{ [        mu,   sterling,   dead_grave,   dead_breve ]	};
     key <AB01>	{ [         w,          W, guillemotleft,        less ]	};
     key <AB07>	{ [     comma,   question, dead_cedilla,    masculine ]	};
-    //key <AB08>{ [ semicolon,     period, horizconnector,   multiply ]	};
-    key <AB08>  { [ semicolon,     period,     dead_tilde,   multiply ]	};
+    key <AB08>	{ [ semicolon,     period, horizconnector,   multiply ]	};
     key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
-    // key <AB10> { [     equal,       plus,    dead_tilde, dead_abovedot]	}; // asciitilde is not fun
-    key <AB10>    { [     equal,       plus,    asciitilde, dead_abovedot]	}; // but let's try again
-    // key <LSGT>    { [      less,    greater,    backslash,    backslash ]	};
-    // key <LSGT>    { [      less,    greater,    U0303, backslash ]	};
-    key <LSGT>    { [      less,    greater,    question, backslash]	};
-
-    key <AB06>	{ [         n,          N, U0303,        U0303 ]	};
+    key <AB10>	{ [     equal,       plus,   dead_tilde, dead_abovedot]	};
+    key <LSGT>  { [      less,    greater,    backslash,    backslash ]	};
 
     include "level3(ralt_switch)"
 };
@@ -78,7 +67,7 @@ xkb_symbols "oss" {
     include "fr(oss)"
     include "be(oss_frbe)"
 
-    name[Group1]="Belgian (alternative)";
+    name[Group1]="Belgian (alt.)";
 };
 
 partial alphanumeric_keys
@@ -119,7 +108,7 @@ xkb_symbols "oss_latin9" {
     include "be(oss_frbe)"
     include "keypad(oss_latin9)"
 
-    name[Group1]="Belgian (alternative, Latin-9 only)";
+    name[Group1]="Belgian (Latin-9 only, alt.)";
 
     // First row
     key <TLDE>	{ [      twosuperior,    threesuperior,          onesuperior,                  less ] }; // ² ³ ¹ < 
@@ -143,39 +132,9 @@ xkb_symbols "oss_latin9" {
 
 
 partial alphanumeric_keys
-xkb_symbols "oss_Sundeadkeys" {
-
-    // Modifies the basic be(oss) layout to use the Sun dead keys
-
-    include "be(oss)"
-
-    // First row
-    key <AE04>	{ [       apostrophe,                4,        dead_cedilla,             0x1002014 ] }; // ' 4 ¸ — (tiret cadratin)
-
-    // Second row
-    key <AD11>	{ [     dead_circumflex,  dead_diaeresis,          bracketleft,        dead_abovering ] }; // ^ ̈ [ ˚
-
-    //Third row
-    key <AC11>	{ [           ugrave,          percent,          dead_acute,                Ugrave ] }; // ù % ' Ù
-    key <BKSL>	{ [              mu,          sterling,          dead_grave,           dead_macron ] }; // µ £ ` ̄
-
-    // Fourth row
-    key <AB10>  { [            equal,             plus,          dead_tilde,             0x1002212 ] }; // = + ~ −
-};
-
-partial alphanumeric_keys
-xkb_symbols "oss_sundeadkeys" {
-
-    include "be(oss_Sundeadkeys)"
-
-    name[Group1]="Belgian (alternative, Sun dead keys)";
-};
-
-
-partial alphanumeric_keys
 xkb_symbols "iso-alternate" {
     include "be(basic)"
-    name[Group1]="Belgian (ISO alternate)";
+    name[Group1]="Belgian (ISO, alt.)";
 
     key <AD01>	{ [         a,          A,           ae,           AE ]	};
     key <AD02>	{ [         z,          Z, guillemotleft,        less ]	};
@@ -186,36 +145,12 @@ xkb_symbols "iso-alternate" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "sundeadkeys" {
-
-    // Use the Sun dead keys
-
-    include "be(basic)"
-    name[Group1]="Belgian (Sun dead keys)";
-
-    key <AD11>	{ [dead_circumflex, dead_diaeresis, bracketleft, bracketleft] };
-    key <AC11>	{ [    ugrave,    percent,  dead_acute,  dead_acute ]	};
-    key <BKSL>	{ [        mu,   sterling,  dead_grave,  dead_grave ]	};
-    key <AB07>	{ [     comma,  question, dead_cedilla, dead_cedilla]	};
-    key <AB10>	{ [     equal,       plus,  dead_tilde,  dead_tilde ]	};
-};
-
-partial alphanumeric_keys
-xkb_symbols "Sundeadkeys" {
-
-    // Use the Sun dead keys
-
-    include "be(sundeadkeys)"
-
-};
-
-partial alphanumeric_keys
 xkb_symbols "nodeadkeys" {
 
     // Eliminates dead keys from the basic Belgian layout
 
     include "be(basic)"
-    name[Group1]="Belgian (eliminate dead keys)";
+    name[Group1]="Belgian (no dead keys)";
 
     key <AE12>	{ [     minus, underscore,      cedilla,       ogonek ]	};
     key <AD11>	{ [asciicircum,  diaeresis,  bracketleft,  bracketleft]	};
@@ -233,7 +168,7 @@ xkb_symbols "wang" {
 
     include "be(basic)"
     include "keypad(legacy_wang)"
-    name[Group1]="Belgian (Wang model 724 azerty)";
+    name[Group1]="Belgian (Wang 724 AZERTY)";
 
     // Engravings on Wang 725-3771-ae
     key <TLDE> { [ twosuperior, threesuperior,   notsign, asciitilde ] };
