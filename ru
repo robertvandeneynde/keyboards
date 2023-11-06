@@ -515,12 +515,12 @@ xkb_symbols "phonetic_azerty" {
     name[Group1]= "Russian (phonetic, AZERTY)";
 
      key <AE01>	{ [ ampersand,          1,  onesuperior,   exclamdown ]	};
-     key <AE02>	{ [    eacute,          2,   asciitilde,    oneeighth ]	};
+     key <AE02>	{ [ Cyrillic_yo, Cyrillic_YO,   asciitilde,    oneeighth ]	};
      key <AE03>	{ [  quotedbl,          3,   numbersign,     sterling ]	};
      key <AE04>	{ [apostrophe,          4,    braceleft,       dollar ]	};
      key <AE05>	{ [ parenleft,          5,  bracketleft, threeeighths ]	};
      key <AE06>	{ [     minus,          6,          bar,  fiveeighths ]	};
-     key <AE07>	{ [    egrave,          7,        grave, seveneighths ]	};
+     key <AE07>	{ [ Cyrillic_yu, Cyrillic_YO,        grave, seveneighths ]	};
      key <AE08>	{ [exclam,          8,    backslash,    trademark ]	};
      key <AE09>	{ [  ccedilla,          9,  asciicircum,    plusminus ]	};
      key <AE10>	{ [    agrave,          0,           at,       degree ]	};
