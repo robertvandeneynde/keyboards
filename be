@@ -1,6 +1,5 @@
 default partial alphanumeric_keys
 xkb_symbols "basic" {
-
     include "latin"
 
     name[Group1]="Belgian";
@@ -29,6 +28,9 @@ xkb_symbols "basic" {
     key <AC10>	{ [         m,          M,   dead_acute, dead_doubleacute ] };
     key <AC11>	{ [    ugrave,    percent,   dead_acute,   dead_caron ]	};
     key <TLDE>	{ [twosuperior, threesuperior,  notsign,      notsign ]	};
+    
+    key <AC02>  { [         s,          S,        U015F,        U015E ] }; 
+    key <AC05>  { [         g,          G,        U011F,        U011E ] }; 
 
     key <BKSL>	{ [        mu,   sterling,   dead_grave,   dead_breve ]	};
     key <AB01>	{ [         w,          W, guillemotleft,        less ]	};
@@ -38,7 +40,10 @@ xkb_symbols "basic" {
     key <AB10>	{ [     equal,       plus,   dead_tilde, dead_abovedot]	};
     key <LSGT>  { [      less,    greater,    backslash,    backslash ]	};
 
+    key <AD08>  { [         i,          I,        U0131,        U0130 ] };
+    
     include "level3(ralt_switch)"
+    
 };
 
 
